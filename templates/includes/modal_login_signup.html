@@ -1,0 +1,21 @@
+
+  <style>
+    .modal-content {
+      background-color: #212121;
+    }
+  </style>
+  <!-- Modal -->
+  <div class="modal fade" id="login-signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="lead font-weight-normal">Already have an account? Please Login<br>New user? Please Signup.</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <a type="button" class="btn btn-block btn-primary" href="{{ url_for('login_page') }}">Login</a>
+          <a type="button" class="btn btn-block btn-primary" href="{{ url_for('register_page') }}">Signup</a>
+      </div>
+    </div>
+  </div>
